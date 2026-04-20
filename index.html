@@ -3,549 +3,769 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sparkles Travel Group | Your Journey Starts Here</title>
+    <title>Sparkles Travel Group — Your Journey, Elevated ✦</title>
+    <meta name="description" content="Sparkles Travel Group — Luxury travel, cruises, destination weddings & custom itineraries. Let us turn your dream vacation into reality.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Preloader -->
+
+    <!-- ✦ Preloader -->
     <div id="preloader">
         <div class="loader">
-            <div class="sparkle-loader"></div>
+            <div class="loader-ring">
+                <div class="loader-plane"><i class="fas fa-plane"></i></div>
+            </div>
             <p>Sparkles Travel Group</p>
+            <span class="loader-sub">Loading your next adventure...</span>
         </div>
     </div>
 
-    <!-- Navigation -->
+    <!-- ✦ Cursor Sparkle Trail -->
+    <div id="cursor-sparkle"></div>
+
+    <!-- ✦ Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">✦</span>
-                <span class="logo-text">Sparkles<span class="logo-accent">Travel</span></span>
+                <span class="logo-sparkle">✦</span>
+                <span>Sparkles<span class="logo-accent">Travel</span></span>
             </a>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#destinations" class="nav-link">Destinations</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#booking" class="nav-link">Book</a></li>
                 <li><a href="#community" class="nav-link">Community</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#book" class="btn btn-primary nav-cta">Book Now</a>
-                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <a href="#booking" class="btn btn-primary nav-cta">
+                    <i class="fas fa-paper-plane"></i>
+                    Plan My Trip
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
                     <span></span><span></span><span></span>
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!-- ✦ Hero Section -->
+    <section class="hero" id="hero">
         <div class="hero-bg">
-            <div class="hero-particles" id="particles"></div>
-            <div class="hero-gradient"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="sparkle-icon">✦</span>
-                <span>Powered by Archer Travel Group & Evolutions Travel</span>
+            <div class="hero-mesh"></div>
+            <div class="hero-gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
             </div>
+            <div class="hero-particles" id="particles"></div>
+            <div class="floating-icons" id="floating-icons">
+                <span class="float-icon" style="--delay:0s;--x:10%;--y:20%">✈️</span>
+                <span class="float-icon" style="--delay:1s;--x:85%;--y:15%">🌴</span>
+                <span class="float-icon" style="--delay:2s;--x:75%;--y:70%">🏖️</span>
+                <span class="float-icon" style="--delay:3s;--x:15%;--y:75%">🗺️</span>
+                <span class="float-icon" style="--delay:4s;--x:90%;--y:45%">⛵</span>
+                <span class="float-icon" style="--delay:5s;--x:5%;--y:50%">🌊</span>
+                <span class="float-icon" style="--delay:1.5s;--x:50%;--y:80%">🌺</span>
+                <span class="float-icon" style="--delay:3.5s;--x:35%;--y:10%">🗼</span>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-pulse"></span>
+                <span>✦ Your Next Adventure Starts Here</span>
+            </div>
+            
             <h1 class="hero-title">
-                <span class="title-line">Travel Beyond</span>
-                <span class="title-line title-accent">The Ordinary</span>
+                <span class="title-line animate-in" style="--delay:0.2s">Travel Beyond</span>
+                <span class="title-line title-accent animate-in" style="--delay:0.4s">Your Imagination</span>
             </h1>
-            <p class="hero-subtitle">
-                Where futuristic planning meets unforgettable destinations. 
-                Your next adventure is one spark away.
+            
+            <p class="hero-subtitle animate-in" style="--delay:0.6s">
+                We craft extraordinary journeys that transform moments into lifelong memories. 
+                From hidden paradises to iconic landmarks — your dream trip is just a conversation away.
             </p>
-            <div class="hero-cta">
-                <a href="#book" class="btn btn-primary btn-lg">
-                    <span>Start Your Journey</span>
+
+            <div class="hero-cta animate-in" style="--delay:0.8s">
+                <a href="#booking" class="btn btn-primary btn-lg btn-glow">
+                    <span>Start Planning</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="#destinations" class="btn btn-outline btn-lg">
+                <a href="#destinations" class="btn btn-glass btn-lg">
+                    <i class="fas fa-compass"></i>
                     <span>Explore Destinations</span>
                 </a>
             </div>
-            <div class="hero-stats">
+
+            <div class="hero-stats animate-in" style="--delay:1s">
                 <div class="stat">
-                    <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Happy Travelers</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-plus">+</span>
                     <span class="stat-label">Destinations</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Years Experience</span>
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Travelers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span>
+                    <span class="stat-plus">%</span>
+                    <span class="stat-label">Satisfaction</span>
                 </div>
             </div>
         </div>
+
         <div class="hero-scroll">
             <a href="#destinations">
-                <span>Scroll to explore</span>
-                <div class="scroll-indicator"></div>
+                <span>Discover More</span>
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
             </a>
         </div>
     </section>
 
-    <!-- Destinations Section -->
+    <!-- ✦ Destination Showcase -->
     <section class="destinations" id="destinations">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag"><span class="sparkle-icon">✦</span> Popular Destinations</span>
-                <h2 class="section-title">Discover Your Next <span class="text-gradient">Adventure</span></h2>
-                <p class="section-desc">From Caribbean paradises to European escapes, we craft journeys that sparkle.</p>
+                <span class="section-tag"><i class="fas fa-map-marker-alt"></i> Popular Destinations</span>
+                <h2 class="section-title">Where Will Your <em>Story</em> Begin?</h2>
+                <p class="section-desc">From turquoise waters to ancient wonders — explore handpicked destinations that promise unforgettable experiences.</p>
             </div>
+
             <div class="destinations-grid">
-                <div class="dest-card dest-featured">
-                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1580541631950-7282082b53ce?w=800&q=80')">
+                <!-- Featured Large Card -->
+                <div class="dest-card dest-featured tilt-card" data-tilt>
+                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1580541631950-7282082b02f6?w=800&q=80')">
+                        <div class="dest-shimmer"></div>
                         <div class="dest-overlay">
-                            <span class="dest-tag">Featured</span>
+                            <span class="dest-tag">✦ Featured</span>
                             <div class="dest-info">
-                                <h3>Caribbean Cruises</h3>
-                                <p>Crystal waters & island hopping</p>
+                                <h3>Maldives</h3>
+                                <p>Crystal waters & overwater villas</p>
                                 <div class="dest-meta">
-                                    <span><i class="fas fa-calendar"></i> 7-14 Days</span>
-                                    <span><i class="fas fa-star"></i> 4.9</span>
+                                    <span><i class="fas fa-sun"></i> Tropical</span>
+                                    <span><i class="fas fa-dollar-sign"></i> From $2,499</span>
+                                    <span><i class="fas fa-clock"></i> 7 Days</span>
                                 </div>
                             </div>
+                            <a href="#booking" class="dest-cta">
+                                Explore <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="dest-card">
-                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80')">
+
+                <div class="dest-card tilt-card" data-tilt>
+                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80')">
+                        <div class="dest-shimmer"></div>
                         <div class="dest-overlay">
+                            <span class="dest-tag">🇫🇷 Europe</span>
                             <div class="dest-info">
                                 <h3>Paris, France</h3>
                                 <p>City of lights & romance</p>
                                 <div class="dest-meta">
-                                    <span><i class="fas fa-calendar"></i> 5-10 Days</span>
-                                    <span><i class="fas fa-star"></i> 4.8</span>
+                                    <span><i class="fas fa-dollar-sign"></i> From $1,899</span>
                                 </div>
                             </div>
+                            <a href="#booking" class="dest-cta">Explore <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="dest-card">
-                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80')">
+
+                <div class="dest-card tilt-card" data-tilt>
+                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&q=80')">
+                        <div class="dest-shimmer"></div>
                         <div class="dest-overlay">
+                            <span class="dest-tag">🇬🇷 Islands</span>
                             <div class="dest-info">
                                 <h3>Santorini, Greece</h3>
-                                <p>Sunsets & whitewashed beauty</p>
+                                <p>Sunset cliffs & blue domes</p>
                                 <div class="dest-meta">
-                                    <span><i class="fas fa-calendar"></i> 5-7 Days</span>
-                                    <span><i class="fas fa-star"></i> 4.9</span>
+                                    <span><i class="fas fa-dollar-sign"></i> From $2,199</span>
                                 </div>
                             </div>
+                            <a href="#booking" class="dest-cta">Explore <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="dest-card">
-                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80')">
+
+                <div class="dest-card tilt-card" data-tilt>
+                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80')">
+                        <div class="dest-shimmer"></div>
                         <div class="dest-overlay">
+                            <span class="dest-tag">🇮🇩 Asia</span>
                             <div class="dest-info">
                                 <h3>Bali, Indonesia</h3>
                                 <p>Temples, rice terraces & surf</p>
                                 <div class="dest-meta">
-                                    <span><i class="fas fa-calendar"></i> 10-14 Days</span>
-                                    <span><i class="fas fa-star"></i> 4.7</span>
+                                    <span><i class="fas fa-dollar-sign"></i> From $1,699</span>
                                 </div>
                             </div>
+                            <a href="#booking" class="dest-cta">Explore <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="dest-card">
-                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1547995886-6dc09384c6e6?w=600&q=80')">
+
+                <div class="dest-card tilt-card" data-tilt>
+                    <div class="dest-image" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80')">
+                        <div class="dest-shimmer"></div>
                         <div class="dest-overlay">
+                            <span class="dest-tag">🇦🇪 Luxury</span>
                             <div class="dest-info">
                                 <h3>Dubai, UAE</h3>
-                                <p>Luxury & futuristic wonder</p>
+                                <p>Opulence meets innovation</p>
                                 <div class="dest-meta">
-                                    <span><i class="fas fa-calendar"></i> 5-7 Days</span>
-                                    <span><i class="fas fa-star"></i> 4.8</span>
+                                    <span><i class="fas fa-dollar-sign"></i> From $2,799</span>
                                 </div>
                             </div>
+                            <a href="#booking" class="dest-cta">Explore <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="section-cta">
-                <a href="#" class="btn btn-outline">View All Destinations <i class="fas fa-arrow-right"></i></a>
+                <a href="#booking" class="btn btn-outline-dark btn-lg">
+                    View All Destinations <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- ✦ Experience Marquee -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>✦ Luxury Cruises</span>
+                <span>✦ Destination Weddings</span>
+                <span>✦ Group Travel</span>
+                <span>✦ Honeymoons</span>
+                <span>✦ All-Inclusive Resorts</span>
+                <span>✦ Adventure Tours</span>
+                <span>✦ Custom Itineraries</span>
+                <span>✦ Luxury Cruises</span>
+                <span>✦ Destination Weddings</span>
+                <span>✦ Group Travel</span>
+                <span>✦ Honeymoons</span>
+                <span>✦ All-Inclusive Resorts</span>
+                <span>✦ Adventure Tours</span>
+                <span>✦ Custom Itineraries</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✦ Services Section -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag"><span class="sparkle-icon">✦</span> What We Offer</span>
-                <h2 class="section-title">Services That <span class="text-gradient">Sparkle</span></h2>
-                <p class="section-desc">Full-service travel planning tailored to your dreams.</p>
+                <span class="section-tag"><i class="fas fa-concierge-bell"></i> Our Services</span>
+                <h2 class="section-title">Travel Experiences <em>Crafted</em> for You</h2>
+                <p class="section-desc">Every journey is unique. We design personalized travel experiences that match your style, budget, and wildest dreams.</p>
             </div>
+
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-ship"></i>
-                        <div class="icon-glow"></div>
+                <div class="service-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                        <div class="icon-ring"></div>
                     </div>
-                    <h3>Cruise Packages</h3>
-                    <p>Luxury ocean & river cruises to the world's most stunning coastlines and ports of call.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <h3>Luxury Cruises</h3>
+                    <p>Set sail on world-class cruise lines. From Caribbean adventures to Mediterranean escapes — all-inclusive luxury awaits on the open seas.</p>
+                    <a href="#booking" class="service-link">
+                        Plan a Cruise <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users"></i>
-                        <div class="icon-glow"></div>
+
+                <div class="service-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>Group Travel</h3>
-                    <p>Coordinated group trips for families, friends, organizations, and corporate teams.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Rally your crew for the ultimate group adventure. Family reunions, friend trips, or corporate retreats — we handle every detail.</p>
+                    <a href="#booking" class="service-link">
+                        Plan Group Trip <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-gem"></i>
-                        <div class="icon-glow"></div>
+
+                <div class="service-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>Luxury Getaways</h3>
-                    <p>Curated high-end experiences with premium resorts, private tours, and VIP treatment.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Indulge in five-star resorts, private villas, and VIP experiences. Because you deserve a vacation that's as extraordinary as you are.</p>
+                    <a href="#booking" class="service-link">
+                        Go Luxury <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heart"></i>
-                        <div class="icon-glow"></div>
+
+                <div class="service-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>Destination Weddings</h3>
-                    <p>Dream wedding planning in paradise — from venues to guest travel coordination.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Say "I do" in paradise. We coordinate every detail — from beachfront ceremonies to mountaintop celebrations around the globe.</p>
+                    <a href="#booking" class="service-link">
+                        Plan Wedding <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-plane"></i>
-                        <div class="icon-glow"></div>
+
+                <div class="service-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>Custom Itineraries</h3>
-                    <p>Personalized trip planning down to every detail — flights, hotels, excursions & more.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>No cookie-cutter trips here. Tell us your vibe and we'll build a day-by-day itinerary packed with experiences you'll never forget.</p>
+                    <a href="#booking" class="service-link">
+                        Build Itinerary <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-umbrella-beach"></i>
-                        <div class="icon-glow"></div>
+
+                <div class="service-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>All-Inclusive Resorts</h3>
-                    <p>Handpicked all-inclusive properties where everything is taken care of for you.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Unpack once, enjoy everything. We partner with top all-inclusive brands so you can relax without worrying about a single bill.</p>
+                    <a href="#booking" class="service-link">
+                        Find Resorts <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Booking Section -->
-    <section class="booking" id="book">
+    <!-- ✦ Experience / Why Choose Us -->
+    <section class="experience" id="experience">
         <div class="container">
-            <div class="booking-wrapper">
-                <div class="booking-info">
-                    <span class="section-tag"><span class="sparkle-icon">✦</span> Ready to Go?</span>
-                    <h2 class="section-title">Book Your <span class="text-gradient">Dream Trip</span></h2>
-                    <p>Tell us where you want to go and we'll handle the rest. From flights to hotels to excursions — your perfect trip is just one consultation away.</p>
-                    <div class="booking-features">
-                        <div class="booking-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Free consultation call</span>
+            <div class="experience-grid">
+                <div class="experience-content">
+                    <span class="section-tag"><i class="fas fa-star"></i> The Sparkles Difference</span>
+                    <h2 class="section-title">Why Travelers <em>Choose</em> Us</h2>
+                    <p class="experience-text">We're not just another travel agency. Backed by <strong>Archer Travel Group</strong> and <strong>Evolutions Travel</strong>, we combine industry expertise with personal touch to create journeys that exceed every expectation.</p>
+                    
+                    <div class="experience-features">
+                        <div class="exp-feature">
+                            <div class="exp-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Protected Booking</h4>
+                                <p>Your investment is always secure with industry-backed protection and transparent pricing.</p>
+                            </div>
                         </div>
-                        <div class="booking-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Personalized itinerary</span>
+                        <div class="exp-feature">
+                            <div class="exp-icon"><i class="fas fa-headset"></i></div>
+                            <div>
+                                <h4>24/7 Travel Support</h4>
+                                <p>From your first inquiry to your last day of vacation — we're just a call or text away.</p>
+                            </div>
                         </div>
-                        <div class="booking-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Best price guarantee</span>
+                        <div class="exp-feature">
+                            <div class="exp-icon"><i class="fas fa-magic"></i></div>
+                            <div>
+                                <h4>Personalized Magic</h4>
+                                <p>Every trip is tailored to you. No templates, no compromises — just your dream, realized.</p>
+                            </div>
                         </div>
-                        <div class="booking-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>24/7 travel support</span>
+                        <div class="exp-feature">
+                            <div class="exp-icon"><i class="fas fa-tags"></i></div>
+                            <div>
+                                <h4>Exclusive Deals</h4>
+                                <p>Access special rates, upgrades, and perks you won't find booking on your own.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="booking-form-wrapper">
-                    <form class="booking-form" id="booking-form">
-                        <h3>Start Planning</h3>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Your name" required>
+
+                <div class="experience-visual">
+                    <div class="exp-image-stack">
+                        <div class="exp-img exp-img-1" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&q=80')"></div>
+                        <div class="exp-img exp-img-2" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80')"></div>
+                        <div class="exp-img exp-img-3" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&q=80')"></div>
+                    </div>
+                    <div class="exp-float-card">
+                        <div class="exp-float-icon">⭐</div>
+                        <div>
+                            <strong>4.9 / 5.0</strong>
+                            <span>Client Rating</span>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="you@email.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input type="tel" id="phone" placeholder="(000) 000-0000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✦ Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-visual">
+                    <div class="booking-image" style="background-image: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80')">
+                        <div class="booking-overlay">
+                            <div class="booking-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"The world is a book, and those who do not travel read only a page."</p>
+                                <span>— Saint Augustine</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-wrapper glass-card">
+                    <div class="form-header">
+                        <span class="form-sparkle">✦</span>
+                        <h3>Plan Your Dream Trip</h3>
+                        <p>Tell us where you want to go and we'll make it happen.</p>
+                    </div>
+                    
+                    <form id="booking-form" class="booking-form">
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="destination">Destination</label>
-                                <select id="destination">
-                                    <option value="">Select destination</option>
-                                    <option>Caribbean</option>
-                                    <option>Europe</option>
-                                    <option>Asia</option>
-                                    <option>Africa</option>
-                                    <option>South America</option>
-                                    <option>Cruise</option>
-                                    <option>Not sure yet</option>
+                            <div class="form-group floating-label">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Full Name</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group floating-label">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Email Address</label>
+                                <div class="input-glow"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group floating-label">
+                            <select id="destination" required>
+                                <option value="" disabled selected></option>
+                                <option>Caribbean & Islands</option>
+                                <option>Europe</option>
+                                <option>Asia & Pacific</option>
+                                <option>Africa & Middle East</option>
+                                <option>Central & South America</option>
+                                <option>Cruises</option>
+                                <option>Honeymoon</option>
+                                <option>Destination Wedding</option>
+                                <option>All-Inclusive Resort</option>
+                                <option>I Need Help Deciding!</option>
+                            </select>
+                            <label for="destination">Where do you want to go?</label>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group floating-label">
+                                <input type="date" id="travel-date" required placeholder=" ">
+                                <label for="travel-date">Travel Date</label>
+                            </div>
+                            <div class="form-group floating-label">
+                                <select id="travelers" required>
+                                    <option value="" disabled selected></option>
+                                    <option>1 Traveler</option>
+                                    <option>2 Travelers</option>
+                                    <option>3-4 Travelers</option>
+                                    <option>5-8 Travelers</option>
+                                    <option>9+ Group</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="travelers">Travelers</label>
-                                <select id="travelers">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3-5</option>
-                                    <option>6-10</option>
-                                    <option>10+</option>
-                                </select>
+                                <label for="travelers">How Many?</label>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="depart">Departure</label>
-                                <input type="date" id="depart">
-                            </div>
-                            <div class="form-group">
-                                <label for="return">Return</label>
-                                <input type="date" id="return">
-                            </div>
+
+                        <div class="form-group floating-label">
+                            <textarea id="notes" rows="3" placeholder=" "></textarea>
+                            <label for="notes">Tell us about your dream trip...</label>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Tell us about your dream trip</label>
-                            <textarea id="message" rows="3" placeholder="Any special requests, interests, or ideas..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <span>Request a Quote</span>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-glow">
+                            <span>Get My Free Quote</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
+                        <p class="form-disclaimer">✦ No commitment required. We'll get back to you within 24 hours.</p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Schedule Appointment Section -->
+    <!-- ✦ Appointment Calendar -->
     <section class="appointment" id="appointment">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag"><span class="sparkle-icon">✦</span> Let's Chat</span>
-                <h2 class="section-title">Schedule a <span class="text-gradient">Consultation</span></h2>
-                <p class="section-desc">Book a free discovery call to discuss your travel goals.</p>
+                <span class="section-tag"><i class="fas fa-calendar-check"></i> Schedule a Call</span>
+                <h2 class="section-title">Let's Talk About Your <em>Trip</em></h2>
+                <p class="section-desc">Book a free consultation with our travel experts. We'll create a personalized plan tailored to your dreams.</p>
             </div>
-            <div class="calendar-placeholder">
-                <div class="calendar-mock">
+
+            <div class="calendar-wrapper">
+                <div class="calendar-mock glass-card">
                     <div class="calendar-header-mock">
-                        <i class="fas fa-calendar-alt"></i>
-                        <h3>Pick a Time That Works</h3>
-                        <p>30-minute free consultation</p>
+                        <div class="calendar-icon-wrap">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="calendar-icon-pulse"></div>
+                        </div>
+                        <h3>Free Travel Consultation</h3>
+                        <p>30-minute video or phone call</p>
                     </div>
+
                     <div class="calendar-grid-mock">
-                        <div class="calendar-day available">Mon<br><span>21</span></div>
-                        <div class="calendar-day available">Tue<br><span>22</span></div>
-                        <div class="calendar-day">Wed<br><span>23</span></div>
-                        <div class="calendar-day available">Thu<br><span>24</span></div>
-                        <div class="calendar-day available">Fri<br><span>25</span></div>
+                        <div class="calendar-day">Mon<span>21</span></div>
+                        <div class="calendar-day available">Tue<span>22</span></div>
+                        <div class="calendar-day available">Wed<span>23</span></div>
+                        <div class="calendar-day">Thu<span>24</span></div>
+                        <div class="calendar-day available">Fri<span>25</span></div>
                     </div>
+
                     <div class="calendar-times">
                         <button class="time-slot">9:00 AM</button>
-                        <button class="time-slot">10:30 AM</button>
-                        <button class="time-slot active">1:00 PM</button>
-                        <button class="time-slot">3:00 PM</button>
-                        <button class="time-slot">4:30 PM</button>
+                        <button class="time-slot active">10:30 AM</button>
+                        <button class="time-slot">1:00 PM</button>
+                        <button class="time-slot">3:30 PM</button>
+                        <button class="time-slot">5:00 PM</button>
                     </div>
-                    <p class="calendar-note">* Calendar integration (Calendly / Google Calendar) will be connected here</p>
+
+                    <button class="btn btn-primary btn-full btn-glow">
+                        <span>Book Consultation</span>
+                        <i class="fas fa-video"></i>
+                    </button>
+                    <p class="calendar-note">✦ Calendly integration coming soon — this is a preview</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Community Section -->
+    <!-- ✦ Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-heart"></i> Traveler Stories</span>
+                <h2 class="section-title">What Our <em>Travelers</em> Say</h2>
+                <p class="section-desc">Real stories from real adventurers who trusted Sparkles Travel Group with their dream vacations.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card-light">
+                    <div class="testimonial-top">
+                        <div class="stars">★★★★★</div>
+                        <span class="testimonial-trip">🌴 Caribbean Cruise</span>
+                    </div>
+                    <p>"Absolutely incredible experience! Everything was planned to perfection. From the moment we boarded to the last sunset — pure magic. Will never book any other way!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #00d4aa, #00c9ff)">JM</div>
+                        <div>
+                            <strong>Jessica M.</strong>
+                            <span>Traveled Feb 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card-light featured-testimonial">
+                    <div class="testimonial-top">
+                        <div class="stars">★★★★★</div>
+                        <span class="testimonial-trip">🇮🇹 Italy Honeymoon</span>
+                    </div>
+                    <p>"Our honeymoon was a dream come true. Sparkles took care of EVERYTHING — the private gondola ride, the vineyard tour, the rooftop dinner in Rome. We just had to show up and enjoy. 10/10!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #f0c27f, #fc5c7d)">D&R</div>
+                        <div>
+                            <strong>David & Rachel T.</strong>
+                            <span>Traveled Jan 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card-light">
+                    <div class="testimonial-top">
+                        <div class="stars">★★★★★</div>
+                        <span class="testimonial-trip">🏔️ Adventure Tour</span>
+                    </div>
+                    <p>"I'm a solo traveler and was nervous about planning a big trip alone. Sparkles made me feel so supported — the itinerary was perfect and I felt safe the entire time. Already planning trip #2!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #00c9ff, #0a0e27)">KL</div>
+                        <div>
+                            <strong>Kara L.</strong>
+                            <span>Traveled Mar 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✦ Community Section -->
     <section class="community" id="community">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag"><span class="sparkle-icon">✦</span> Join the Conversation</span>
-                <h2 class="section-title">Sparkles Travel <span class="text-gradient">Community</span></h2>
-                <p class="section-desc">Connect with fellow travelers, share experiences, and get insider tips.</p>
+                <span class="section-tag"><i class="fas fa-globe-americas"></i> Join the Community</span>
+                <h2 class="section-title">Connect With Fellow <em>Explorers</em></h2>
+                <p class="section-desc">Join our growing community of travel lovers. Share stories, discover hidden gems, and get exclusive deals.</p>
             </div>
+
             <div class="community-grid">
-                <div class="community-feature">
+                <div class="community-feature glass-card">
                     <div class="community-icon"><i class="fas fa-comments"></i></div>
-                    <h3>Discussion Forums</h3>
-                    <p>Ask questions, share tips, and connect with travelers heading to the same destinations.</p>
+                    <h3>Travel Forums</h3>
+                    <p>Ask questions, share tips, and connect with travelers who've been where you want to go.</p>
                 </div>
-                <div class="community-feature">
-                    <div class="community-icon"><i class="fas fa-images"></i></div>
+                <div class="community-feature glass-card">
+                    <div class="community-icon"><i class="fas fa-camera-retro"></i></div>
                     <h3>Travel Stories</h3>
-                    <p>Share your travel photos and experiences. Inspire and be inspired by the community.</p>
+                    <p>Share your adventures and photos. Inspire others and relive your favorite moments.</p>
                 </div>
-                <div class="community-feature">
-                    <div class="community-icon"><i class="fas fa-gift"></i></div>
-                    <h3>Exclusive Deals</h3>
-                    <p>Community members get first access to special promotions, group trips, and flash deals.</p>
+                <div class="community-feature glass-card">
+                    <div class="community-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Flash Deals</h3>
+                    <p>Community members get first access to limited-time deals and exclusive travel packages.</p>
                 </div>
-                <div class="community-feature">
-                    <div class="community-icon"><i class="fas fa-video"></i></div>
+                <div class="community-feature glass-card">
+                    <div class="community-icon"><i class="fas fa-calendar-star"></i></div>
                     <h3>Live Events</h3>
-                    <p>Join live Q&As, destination spotlights, and travel planning workshops.</p>
+                    <p>Join virtual travel talks, destination reveals, and Q&A sessions with travel experts.</p>
                 </div>
             </div>
+
             <div class="community-cta">
-                <div class="community-signup">
-                    <h3>Ready to join?</h3>
-                    <p>Sign up for free and become part of the Sparkles travel family.</p>
+                <div class="community-signup glass-card">
+                    <h3>Be the First to Know ✦</h3>
+                    <p>Get exclusive deals, travel inspo, and community updates straight to your inbox.</p>
                     <form class="community-form">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary">Join Community</button>
+                        <input type="email" placeholder="Enter your email..." required>
+                        <button type="submit" class="btn btn-primary btn-glow">
+                            <span>Join</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </form>
-                    <p class="community-count"><strong>250+</strong> travelers already in the community</p>
+                    <p class="community-count">✦ Join <strong>2,400+</strong> travel enthusiasts already in the community</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ✦ About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-content">
-                    <span class="section-tag"><span class="sparkle-icon">✦</span> Our Story</span>
-                    <h2 class="section-title">About <span class="text-gradient">Sparkles Travel</span></h2>
-                    <p class="about-text">
-                        Sparkles Travel Group was born from a passion for creating extraordinary travel experiences. 
-                        As an independent travel agency backed by the trusted expertise of 
-                        <strong>Archer Travel Group</strong> and <strong>Evolutions Travel</strong>, 
-                        we combine personal attention with industry-leading resources.
-                    </p>
-                    <p class="about-text">
-                        We believe every trip should sparkle — from the first consultation to the moment you return home 
-                        with stories to tell. Whether it's a luxury cruise, a destination wedding, or a family adventure, 
-                        we plan every detail so you can focus on making memories.
-                    </p>
+                    <span class="section-tag"><i class="fas fa-sparkles"></i> Our Story</span>
+                    <h2 class="section-title">Born to Make Travel <em>Sparkle</em></h2>
+                    
+                    <p class="about-text">Sparkles Travel Group was founded with one bold mission: to make travel accessible, exciting, and deeply personal. We believe that everyone deserves a vacation that leaves them breathless — not stressed.</p>
+                    
+                    <p class="about-text">Backed by the trusted networks of <strong>Archer Travel Group</strong> and <strong>Evolutions Travel</strong>, we combine the resources of industry leaders with the personalized care of an independent agency. That means you get the best of both worlds: competitive rates and someone who actually cares about your trip.</p>
+
                     <div class="about-values">
                         <div class="value">
-                            <i class="fas fa-star"></i>
+                            <div class="value-icon"><i class="fas fa-heart"></i></div>
                             <div>
-                                <h4>Personalized Service</h4>
-                                <p>Every trip is custom-crafted to your unique preferences and budget.</p>
+                                <h4>Passion-Driven</h4>
+                                <p>We travel because we love it — and that passion shows in every trip we plan.</p>
                             </div>
                         </div>
                         <div class="value">
-                            <i class="fas fa-shield-alt"></i>
+                            <div class="value-icon"><i class="fas fa-handshake"></i></div>
                             <div>
-                                <h4>Trusted Partnerships</h4>
-                                <p>Backed by Archer Travel Group & Evolutions Travel for reliability.</p>
+                                <h4>Trust & Transparency</h4>
+                                <p>No hidden fees, no surprises. Just honest advice and real value.</p>
                             </div>
                         </div>
                         <div class="value">
-                            <i class="fas fa-globe-americas"></i>
+                            <div class="value-icon"><i class="fas fa-rocket"></i></div>
                             <div>
-                                <h4>Global Reach</h4>
-                                <p>Access to worldwide destinations, exclusive deals & VIP perks.</p>
+                                <h4>Innovation First</h4>
+                                <p>We use the latest tools and tech to make planning effortless and fun.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="about-image">
-                    <div class="about-img-wrapper" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80')"></div>
-                    <div class="about-badge">
-                        <span class="badge-number">15+</span>
-                        <span class="badge-text">Years of<br>Excellence</span>
+                    <div class="about-img-wrapper" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80')">
+                        <div class="about-img-overlay"></div>
+                    </div>
+                    <div class="about-badge glass-card">
+                        <span class="badge-emoji">✦</span>
+                        <span class="badge-number">500+</span>
+                        <span class="badge-text">Happy Travelers</span>
+                    </div>
+                    <div class="about-badge-2 glass-card">
+                        <span class="badge-emoji">🌍</span>
+                        <span class="badge-number">50+</span>
+                        <span class="badge-text">Destinations</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><span class="sparkle-icon">✦</span> Client Love</span>
-                <h2 class="section-title">What Travelers <span class="text-gradient">Say</span></h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Sparkles Travel planned the most incredible Caribbean cruise for our family. Every detail was perfect — from the cabin to the excursions. Can't wait to book again!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JM</div>
-                        <div>
-                            <strong>Jessica M.</strong>
-                            <span>Caribbean Cruise</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Our destination wedding in Jamaica was a dream come true. The team coordinated travel for 40 guests flawlessly. Truly above and beyond!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">DT</div>
-                        <div>
-                            <strong>David & Tanya</strong>
-                            <span>Destination Wedding</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"I've used other travel agents before, but Sparkles is on another level. Personalized, responsive, and they found deals I couldn't find on my own."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">RK</div>
-                        <div>
-                            <strong>Robert K.</strong>
-                            <span>Europe Tour</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- ✦ Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <span class="section-tag"><span class="sparkle-icon">✦</span> Get in Touch</span>
-                    <h2 class="section-title">Let's Make Your Trip <span class="text-gradient">Sparkle</span></h2>
-                    <p>Have questions? Want to start planning? Reach out — we'd love to hear from you.</p>
+                    <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+                    <h2 class="section-title">Ready to Start Your <em>Adventure</em>?</h2>
+                    <p>We'd love to hear from you. Whether you have a specific destination in mind or need help deciding — we're here for you.</p>
+
                     <div class="contact-methods">
-                        <a href="mailto:sparklestravelgroup@gmail.com" class="contact-method">
-                            <i class="fas fa-envelope"></i>
+                        <a href="mailto:sparklestravelgroup@gmail.com" class="contact-method glass-card">
+                            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <strong>Email Us</strong>
                                 <span>sparklestravelgroup@gmail.com</span>
                             </div>
                         </a>
-                        <a href="#appointment" class="contact-method">
-                            <i class="fas fa-calendar"></i>
+                        <a href="#appointment" class="contact-method glass-card">
+                            <div class="contact-method-icon"><i class="fas fa-calendar-check"></i></div>
                             <div>
-                                <strong>Schedule a Call</strong>
-                                <span>Book a free consultation</span>
+                                <strong>Book a Call</strong>
+                                <span>Free 30-min consultation</span>
                             </div>
                         </a>
+                        <div class="contact-method glass-card">
+                            <div class="contact-method-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Response Time</strong>
+                                <span>Within 24 hours, guaranteed</span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="social-links">
-                        <h4>Follow Us</h4>
+                        <h4>Follow the Journey</h4>
                         <div class="social-icons">
                             <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -557,74 +777,81 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="contact-visual">
                     <div class="globe-animation">
                         <i class="fas fa-globe-americas"></i>
                         <div class="orbit orbit-1"></div>
                         <div class="orbit orbit-2"></div>
                         <div class="orbit orbit-3"></div>
+                        <div class="orbit-dot orbit-dot-1">✈️</div>
+                        <div class="orbit-dot orbit-dot-2">✦</div>
+                        <div class="orbit-dot orbit-dot-3">🌟</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ✦ Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="nav-logo">
-                        <span class="logo-icon">✦</span>
-                        <span class="logo-text">Sparkles<span class="logo-accent">Travel</span></span>
+                    <a href="#" class="nav-logo footer-logo">
+                        <span class="logo-sparkle">✦</span>
+                        <span>Sparkles<span class="logo-accent">Travel</span></span>
                     </a>
-                    <p>Making every journey sparkle since day one. Your trusted independent travel agency.</p>
+                    <p>Crafting extraordinary travel experiences since 2026. Backed by Archer Travel Group & Evolutions Travel.</p>
                     <div class="footer-badges">
-                        <span class="footer-badge">Archer Travel Group</span>
-                        <span class="footer-badge">Evolutions Travel</span>
+                        <span class="footer-badge">✦ Archer Travel Group</span>
+                        <span class="footer-badge">✦ Evolutions Travel</span>
+                        <span class="footer-badge">✦ IATA Accredited</span>
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Destinations</h4>
                     <ul>
-                        <li><a href="#destinations">Destinations</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#book">Book a Trip</a></li>
-                        <li><a href="#community">Community</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Caribbean</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia & Pacific</a></li>
+                        <li><a href="#">Africa & Middle East</a></li>
+                        <li><a href="#">Cruises</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Cruise Packages</a></li>
-                        <li><a href="#">Group Travel</a></li>
                         <li><a href="#">Luxury Getaways</a></li>
+                        <li><a href="#">Group Travel</a></li>
                         <li><a href="#">Destination Weddings</a></li>
+                        <li><a href="#">Honeymoons</a></li>
                         <li><a href="#">Custom Itineraries</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Connect</h4>
+                    <h4>Company</h4>
                     <ul>
-                        <li><a href="mailto:sparklestravelgroup@gmail.com">Email Us</a></li>
-                        <li><a href="#appointment">Book a Consultation</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Sparkles Travel Group. All rights reserved.</p>
+                <p>© 2026 Sparkles Travel Group. All rights reserved. ✦</p>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 </html>
